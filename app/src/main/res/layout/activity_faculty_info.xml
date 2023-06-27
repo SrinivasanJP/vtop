@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activities.Modules.Faculty_info"
+    android:background="#0f111a">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faculty Information"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/facultyInfoLable"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search by Faculty Name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/facultyInfoLable"
+        android:layout_margin="20dp"
+        android:id="@+id/inputLable"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputLable"
+        android:background="@drawable/curve_box"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/black"
+        android:hint="Enter the Name"
+        android:padding="10dp"
+        android:id="@+id/facultyInput"/>
+
+    <RelativeLayout
+        android:id="@+id/facultyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/facultyInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/curve_box">
+
+        <TextView
+            android:id="@+id/btntext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="Search"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <ProgressBar
+            android:id="@+id/facultyProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/facultyViewContainer"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/facultyButton"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/facultyDataContainer"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:id="@+id/faculty_img"
+                android:background="@drawable/curve_box"
+                android:layout_margin="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. GANESAN R"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:id="@+id/facultyName"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Professor Grade 2"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:id="@+id/facultyDesignation"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AB1-1 Dean Cabin"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:id="@+id/facultyCabin"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="deancc.scse@vit.ac.in"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:id="@+id/facultyEmail"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

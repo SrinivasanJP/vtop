@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">VTOP</string>
+    <string-array name="modules">
+        <item>HOD and Dean Info</item>
+        <item>Faculty Info</item>
+        <item>Class Messages</item>
+        <item>My Curriculum</item>
+        <item>Time Table</item>
+        <item>Class Attendance</item>
+        <item>Course Page</item>
+        <item>Feedback</item>
+        <item>Logout</item>
+    </string-array>
+    <string-array name="spinnerSem">
+        <item>Fall inter Semester</item>
+        <item>Winter Semester</item>
+        <item>Fall Semester</item>
+    </string-array>
+</resources>
